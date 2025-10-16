@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AGS Systems – Logistics Consulting</title>
+  <meta name="description" content="AGS Systems is a logistics consulting and operational strategy firm founded by Alex Gabor Szabo." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta property="og:title" content="AGS Systems – Logistics Consulting" />
+  <meta property="og:description" content="Network design, procurement strategy, operations playbooks, and risk & compliance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/logo.png" />
+  <style>
+    :root { --bg:#0b0e11; --muted:#7b8793; --accent:#a1a795; --olive:#3b4a3f; --white:#e8ecef; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{ margin:0; background:radial-gradient(1200px 600px at 70% -10%, #12171c 0%, var(--bg) 60%),
+                 radial-gradient(900px 500px at -10% 110%, #0f1317 0%, var(--bg) 60%);
+          color:var(--white); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; letter-spacing:.2px; overflow-x:hidden }
+    .noise{position:fixed; inset:0; pointer-events:none; opacity:.07; background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.35"/></svg>'); mix-blend-mode:overlay}
+    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(6px); background:rgba(11,14,17,.72); border-bottom:1px solid #161b20}
+    .nav{max-width:1120px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:10px; align-items:center; text-decoration:none; color:var(--white)}
+    .brand .word{font-weight:800; letter-spacing:1.2px}
+    .chip{font-size:12px; color:var(--accent); border:1px solid #2a3128; padding:4px 8px; border-radius:999px; background:linear-gradient(180deg, #0d1115, #0b0e11)}
+    .announcement{background:linear-gradient(180deg,#10161a,#0e1317); border-bottom:1px solid #1b2126; color:var(--accent)}
+    .announcement .bar{max-width:1120px; margin:0 auto; padding:10px 20px; display:flex; gap:10px; align-items:center; justify-content:center; text-align:center}
+    .hero{min-height:calc(60dvh); display:grid; place-items:center; padding:60px 20px}
+    .card{width:min(900px, 92vw); background:linear-gradient(180deg, rgba(58,70,62,.25), rgba(58,70,62,0)) border-box; border:1px solid #1b2126; border-radius:22px; padding:42px; text-align:center; box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .logo{width:min(420px, 70vw); height:auto; display:block; margin:0 auto 22px auto; filter:drop-shadow(0 12px 24px rgba(0,0,0,.35))}
+    h1{margin:0 0 10px; font-size:clamp(28px, 3.6vw, 42px); font-weight:900; letter-spacing:.8px}
+    p.lead{margin:0 auto 26px; max-width:68ch; color:var(--muted)}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+    .btn{position:relative; appearance:none; cursor:pointer; border-radius:12px; padding:12px 18px; font-weight:700; letter-spacing:.4px; border:1px solid #1e252a; background:linear-gradient(180deg,#12171c,#0e1216); color:var(--white); text-decoration:none}
+    .btn:hover{border-color:#273036}
+    .btn.primary{background:linear-gradient(180deg, var(--accent) 0%, #8f967f 100%); color:#0a0d0f; border-color:#5f664f}
+    .sections{max-width:1120px; margin:30px auto 80px; padding:0 20px; display:grid; grid-template-columns:1.2fr .8fr; gap:22px}
+    .panel{background:linear-gradient(180deg,#0f1317,#0c1013); border:1px solid #1b2126; border-radius:18px; padding:20px}
+    .panel h2{margin:0 0 8px; font-size:18px; letter-spacing:.6px}
+    .panel p{margin:0 0 12px; color:var(--muted)}
+    .list{display:grid; gap:12px; margin-top:10px}
+    .item{display:flex; gap:10px}
+    .dot{width:8px; height:8px; border-radius:50%; background:var(--olive); margin-top:8px}
+    footer{border-top:1px solid #161b20; color:var(--muted)}
+    .foot{max-width:1120px; margin:0 auto; padding:24px 20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color:#8e9aa6; font-size:12px}
+    @media (max-width:920px){ .sections{grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#">
+        <span class="chip">LOGISTICS • STRATEGY</span>
+        <span class="word">AGS Systems</span>
+      </a>
+      <span class="mono">Founded by Alex Gabor Szabo</span>
+    </nav>
+  </header>
+  <div class="announcement">
+    <div class="bar">
+      <strong>Coming Soon:</strong>&nbsp; <span>IDONTTALKTOPOLLSTERS.COM</span> — a new product from AGS Systems. Target launch: <em>Fall 2025</em>.
+    </div>
+  </div>
+  <main class="hero">
+    <section class="card" aria-label="Hero">
+      <img class="logo" alt="AGS Systems logo" src="/logo.png" />
+      <h1>Logistics Consulting & Operational Excellence</h1>
+      <p class="lead">
+        AGS Systems is a boutique consulting firm focused on logistics design, supply chain resilience, and execution at scale.
+        "AGS" stands for <strong>Alex Gabor Szabo</strong>—our founder—reflecting the ownership, accountability, and precision we bring to every engagement.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Book a Discovery Call</a>
+        <a class="btn" href="#capabilities">View Capabilities</a>
+      </div>
+    </section>
+  </main>
+  <section class="sections" id="capabilities" aria-label="Capabilities">
+    <article class="panel">
+      <h2>What We Do</h2>
+      <div class="list">
+        <div class="item"><span class="dot"></span><p><strong>Network Design:</strong> facility placement, route optimization, and demand-driven distribution models.</p></div>
+        <div class="item"><span class="dot"></span><p><strong>Procurement & 3PL Strategy:</strong> partner selection, SLAs, and cost-to-serve analytics.</p></div>
+        <div class="item"><span class="dot"></span><p><strong>Operational Playbooks:</strong> SOPs, KPIs, control towers, and cross-dock/last-mile orchestration.</p></div>
+        <div class="item"><span class="dot"></span><p><strong>Risk & Compliance:</strong> continuity planning, regulatory readiness, and audit trails.</p></div>
+      </div>
+    </article>
+    <article class="panel">
+      <h2>Product Launch — Fall 2025</h2>
+      <p><strong>IDONTTALKTOPOLLSTERS.COM</strong> is a forthcoming product from AGS Systems. Built with our logistics mindset—simple pipelines, strong data hygiene, and operational clarity—it turns messy inbound response flows into clean, actionable intelligence.</p>
+      <p class="mono">Status: Preparing GTM • Target: Fall 2025</p>
+    </article>
+  </section>
+  <section class="sections" aria-label="About">
+    <article class="panel">
+      <h2>About the Founder</h2>
+      <p>Alex Gabor Szabo has led complex, multi-party operations across regulated and time-critical environments. The initials in our name are a promise: leadership is personal, and outcomes matter.</p>
+    </article>
+    <article class="panel">
+      <h2>Engagement Model</h2>
+      <p>We start with a diagnostic sprint, deliver a practical roadmap, then co-pilot execution with measurable milestones.</p>
+    </article>
+  </section>
+  <footer id="contact">
+    <div class="foot">
+      <span>© <span id="y"></span> AGS Systems. All rights reserved.</span>
+      <span class="mono">Contact: ops@agssystems.co</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
